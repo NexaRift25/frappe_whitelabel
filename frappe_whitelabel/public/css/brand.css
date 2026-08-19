@@ -1,0 +1,57 @@
+/* brand.css — Minimal branding overrides. Works with Frappe's existing layout. */
+
+/* Primary color on buttons */
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus {
+	background-color: var(--primary-color) !important;
+	border-color: var(--primary-color) !important;
+	color: #fff !important;
+}
+
+.btn-primary:hover {
+	background-color: var(--primary-color) !important;
+	border-color: var(--primary-color) !important;
+	opacity: 0.9;
+}
+
+/* Links */
+a {
+	color: var(--primary-color);
+}
+
+/* Navbar */
+.navbar {
+	background-color: var(--navbar-bg) !important;
+	border-bottom: 1px solid var(--border-color);
+}
+
+/* Workspace sidebar — only the desk navigation, not form/list sidebars */
+.desk-sidebar {
+	border-right: 1px solid var(--border-color);
+}
+
+.desk-sidebar .standard-sidebar-item {
+	border-radius: var(--border-radius-md);
+	margin-bottom: 1px;
+}
+
+.desk-sidebar .standard-sidebar-item .item-anchor {
+	padding: 7px 12px;
+}
+
+.desk-sidebar .standard-sidebar-item:hover,
+.desk-sidebar .standard-sidebar-item.selected {
+	background-color: var(--sidebar-select-color);
+}
+
+/* Cards and widgets — gentle shadow */
+.frappe-card,
+.widget {
+	border-radius: var(--border-radius-md);
+}
+
+/* Form inputs */
+.form-control {
+	border-radius: var(--border-radius-sm);
+}

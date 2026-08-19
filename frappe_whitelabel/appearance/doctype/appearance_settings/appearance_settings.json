@@ -1,0 +1,365 @@
+{
+ "actions": [],
+ "creation": "2026-08-17 12:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "preview_tab",
+  "preview_html",
+  "branding_tab",
+  "product_name",
+  "short_name",
+  "company_name",
+  "column_break_brand",
+  "tagline",
+  "description",
+  "assets_section",
+  "logo",
+  "logo_dark",
+  "login_logo",
+  "column_break_assets",
+  "navbar_logo",
+  "favicon",
+  "app_icon",
+  "splash_logo",
+  "theme_tab",
+  "light_theme",
+  "dark_theme",
+  "column_break_theme",
+  "hide_framework_branding",
+  "layout_tab",
+  "sidebar_style",
+  "sidebar_behavior",
+  "navbar_style",
+  "logo_placement",
+  "column_break_layout",
+  "button_style",
+  "card_style",
+  "table_style",
+  "form_style",
+  "border_radius",
+  "page_background",
+  "login_tab",
+  "login_layout",
+  "login_show_tagline",
+  "column_break_login",
+  "login_background",
+  "login_footer_text",
+  "email_tab",
+  "email_footer",
+  "disable_framework_email_footer",
+  "column_break_email",
+  "print_header_text",
+  "browser_title_suffix",
+  "advanced_tab",
+  "hide_help_links",
+  "custom_css"
+ ],
+ "fields": [
+  {
+   "fieldname": "preview_tab",
+   "fieldtype": "Tab Break",
+   "label": "Preview"
+  },
+  {
+   "fieldname": "preview_html",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "branding_tab",
+   "fieldtype": "Tab Break",
+   "label": "Branding"
+  },
+  {
+   "default": "Nexarift",
+   "description": "Shown in the login page, browser tab, emails, and About dialog.",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name",
+   "reqd": 1
+  },
+  {
+   "default": "NX",
+   "fieldname": "short_name",
+   "fieldtype": "Data",
+   "label": "Short Name"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "column_break_brand",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Work, organized.",
+   "fieldname": "tagline",
+   "fieldtype": "Data",
+   "label": "Tagline"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "assets_section",
+   "fieldtype": "Section Break",
+   "label": "Logos & Icons"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "logo_dark",
+   "fieldtype": "Attach Image",
+   "label": "Dark Mode Logo"
+  },
+  {
+   "fieldname": "login_logo",
+   "fieldtype": "Attach Image",
+   "label": "Login Logo"
+  },
+  {
+   "fieldname": "column_break_assets",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "navbar_logo",
+   "fieldtype": "Attach Image",
+   "label": "Navbar Logo"
+  },
+  {
+   "fieldname": "favicon",
+   "fieldtype": "Attach Image",
+   "label": "Favicon"
+  },
+  {
+   "fieldname": "app_icon",
+   "fieldtype": "Attach Image",
+   "label": "Mobile / App Icon"
+  },
+  {
+   "fieldname": "splash_logo",
+   "fieldtype": "Attach Image",
+   "label": "Loading / Splash Logo"
+  },
+  {
+   "fieldname": "theme_tab",
+   "fieldtype": "Tab Break",
+   "label": "Theme"
+  },
+  {
+   "fieldname": "light_theme",
+   "fieldtype": "Link",
+   "label": "Light Theme",
+   "options": "Appearance Theme"
+  },
+  {
+   "fieldname": "dark_theme",
+   "fieldtype": "Link",
+   "label": "Dark Theme",
+   "options": "Appearance Theme"
+  },
+  {
+   "fieldname": "column_break_theme",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "description": "Replace Frappe/ERPNext product name, about dialog, splash defaults, and email footer branding.",
+   "fieldname": "hide_framework_branding",
+   "fieldtype": "Check",
+   "label": "Hide Framework Branding"
+  },
+  {
+   "fieldname": "layout_tab",
+   "fieldtype": "Tab Break",
+   "label": "Layout"
+  },
+  {
+   "default": "Solid",
+   "fieldname": "sidebar_style",
+   "fieldtype": "Select",
+   "label": "Sidebar Style",
+   "options": "Solid\nSoft\nMinimal\nCompact"
+  },
+  {
+   "default": "Expanded",
+   "fieldname": "sidebar_behavior",
+   "fieldtype": "Select",
+   "label": "Sidebar Behavior",
+   "options": "Expanded\nCollapsed"
+  },
+  {
+   "default": "Solid",
+   "fieldname": "navbar_style",
+   "fieldtype": "Select",
+   "label": "Navbar Appearance",
+   "options": "Solid\nTinted\nMinimal"
+  },
+  {
+   "default": "Left",
+   "fieldname": "logo_placement",
+   "fieldtype": "Select",
+   "label": "Logo Placement",
+   "options": "Left\nCenter"
+  },
+  {
+   "fieldname": "column_break_layout",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Rounded",
+   "fieldname": "button_style",
+   "fieldtype": "Select",
+   "label": "Button Style",
+   "options": "Rounded\nPill\nSquare"
+  },
+  {
+   "default": "Elevated",
+   "fieldname": "card_style",
+   "fieldtype": "Select",
+   "label": "Card Style",
+   "options": "Elevated\nOutlined\nFlat"
+  },
+  {
+   "default": "Comfortable",
+   "fieldname": "table_style",
+   "fieldtype": "Select",
+   "label": "Table Style",
+   "options": "Comfortable\nCompact\nBordered"
+  },
+  {
+   "default": "Spacious",
+   "fieldname": "form_style",
+   "fieldtype": "Select",
+   "label": "Form Appearance",
+   "options": "Spacious\nCompact"
+  },
+  {
+   "default": "Medium",
+   "fieldname": "border_radius",
+   "fieldtype": "Select",
+   "label": "Border Radius",
+   "options": "Small\nMedium\nLarge"
+  },
+  {
+   "default": "Muted",
+   "fieldname": "page_background",
+   "fieldtype": "Select",
+   "label": "Page Background",
+   "options": "Default\nMuted\nTinted"
+  },
+  {
+   "fieldname": "login_tab",
+   "fieldtype": "Tab Break",
+   "label": "Login Page"
+  },
+  {
+   "default": "Split",
+   "fieldname": "login_layout",
+   "fieldtype": "Select",
+   "label": "Login Layout",
+   "options": "Centered\nSplit\nCover"
+  },
+  {
+   "default": "1",
+   "fieldname": "login_show_tagline",
+   "fieldtype": "Check",
+   "label": "Show Tagline on Login"
+  },
+  {
+   "fieldname": "column_break_login",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "login_background",
+   "fieldtype": "Attach Image",
+   "label": "Login Background"
+  },
+  {
+   "fieldname": "login_footer_text",
+   "fieldtype": "Data",
+   "label": "Login Footer Text"
+  },
+  {
+   "fieldname": "email_tab",
+   "fieldtype": "Tab Break",
+   "label": "Email & Print"
+  },
+  {
+   "description": "Used as the email footer address. The standard Frappe/ERPNext footer is disabled when the option below is checked.",
+   "fieldname": "email_footer",
+   "fieldtype": "Small Text",
+   "label": "Email Footer"
+  },
+  {
+   "default": "1",
+   "fieldname": "disable_framework_email_footer",
+   "fieldtype": "Check",
+   "label": "Disable Framework Email Footer"
+  },
+  {
+   "fieldname": "column_break_email",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "print_header_text",
+   "fieldtype": "Data",
+   "label": "Print Header Text"
+  },
+  {
+   "description": "Optional suffix after page titles in the browser tab.",
+   "fieldname": "browser_title_suffix",
+   "fieldtype": "Data",
+   "label": "Browser Title Suffix"
+  },
+  {
+   "fieldname": "advanced_tab",
+   "fieldtype": "Tab Break",
+   "label": "Advanced"
+  },
+  {
+   "default": "0",
+   "description": "Hide Frappe documentation and issue-tracker links from the Help menu.",
+   "fieldname": "hide_help_links",
+   "fieldtype": "Check",
+   "label": "Hide Framework Help Links"
+  },
+  {
+   "description": "Optional extra CSS. Most branding should be configured in the other tabs.",
+   "fieldname": "custom_css",
+   "fieldtype": "Code",
+   "label": "Additional CSS",
+   "options": "CSS"
+  }
+ ],
+ "icon": "fa fa-paint-brush",
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-08-17 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Appearance",
+ "name": "Appearance Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

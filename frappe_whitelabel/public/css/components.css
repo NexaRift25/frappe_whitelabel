@@ -1,0 +1,122 @@
+/* components.css — Extra visual polish for specific components */
+
+/* Splash screen */
+.appearance-splash {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	min-height: 100vh;
+}
+
+.appearance-splash img {
+	max-width: 80px;
+	max-height: 80px;
+}
+
+.appearance-splash-name {
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+/* Login page enhancements */
+body[data-path="login"] .web-footer,
+body[data-path="login"] .navbar {
+	display: none;
+}
+
+body[data-path="login"] .page-card {
+	border-radius: var(--border-radius-lg);
+	border: 1px solid var(--border-color);
+	box-shadow: var(--shadow-md);
+}
+
+body[data-path="login"] .app-logo {
+	max-height: 40px;
+	width: auto;
+}
+
+/* Split login layout */
+body[data-path="login"].appearance-login-split {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+body[data-path="login"].appearance-login-split .appearance-login-panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 3rem;
+	background: var(--gray-900);
+	color: var(--gray-100);
+}
+
+body[data-path="login"].appearance-login-split .appearance-login-panel h1 {
+	font-size: 1.75rem;
+	margin-bottom: 0.5rem;
+}
+
+body[data-path="login"].appearance-login-split .page-card {
+	margin: auto;
+	border: none;
+	box-shadow: none;
+}
+
+@media (max-width: 768px) {
+	body[data-path="login"].appearance-login-split {
+		display: block;
+	}
+	body[data-path="login"].appearance-login-split .appearance-login-panel {
+		display: none;
+	}
+}
+
+/* Preview widget in Appearance Settings */
+.appearance-preview-frame {
+	border: 1px solid var(--border-color);
+	border-radius: var(--border-radius-lg);
+	overflow: hidden;
+	min-height: 260px;
+}
+
+.appearance-preview-frame .pv-nav {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 14px;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.appearance-preview-frame .pv-body {
+	display: grid;
+	grid-template-columns: 110px 1fr;
+	min-height: 200px;
+}
+
+.appearance-preview-frame .pv-side {
+	padding: 10px;
+	border-right: 1px solid var(--border-color);
+}
+
+.appearance-preview-frame .pv-main {
+	padding: 14px;
+}
+
+.appearance-preview-frame .pv-card {
+	padding: 12px;
+	margin-bottom: 8px;
+	border-radius: var(--border-radius-md);
+	border: 1px solid var(--border-color);
+}
+
+.appearance-preview-frame .pv-btn {
+	display: inline-block;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 12px;
+	border-radius: var(--border-radius-sm);
+}

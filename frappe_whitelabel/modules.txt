@@ -1,1 +1,1 @@
-Frappe Whitelabel
+Appearance

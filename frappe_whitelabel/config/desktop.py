@@ -1,10 +1,11 @@
 from frappe import _
 
+
 def get_data():
 	return [
 		{
-			"module_name": "Frappe Whitelabel",
+			"module_name": "Appearance",
 			"type": "module",
-			"label": _("Frappe Whitelabel")
+			"label": _("Appearance"),
 		}
 	]

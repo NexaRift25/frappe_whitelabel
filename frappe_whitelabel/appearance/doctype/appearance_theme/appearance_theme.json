@@ -1,0 +1,276 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:theme_name",
+ "creation": "2026-08-17 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "preview_section",
+  "preview_html",
+  "details_section",
+  "theme_name",
+  "theme_mode",
+  "column_break_meta",
+  "is_standard",
+  "is_active",
+  "colors_section",
+  "primary_color",
+  "secondary_color",
+  "accent_color",
+  "column_break_colors",
+  "success_color",
+  "warning_color",
+  "danger_color",
+  "info_color",
+  "surfaces_section",
+  "background_color",
+  "surface_color",
+  "text_color",
+  "muted_text_color",
+  "column_break_surfaces",
+  "border_color",
+  "navbar_color",
+  "sidebar_color",
+  "sidebar_text_color",
+  "typography_section",
+  "font_family",
+  "heading_font",
+  "column_break_type",
+  "base_font_size",
+  "heading_weight",
+  "body_weight"
+ ],
+ "fields": [
+  {
+   "fieldname": "preview_section",
+   "fieldtype": "Section Break",
+   "label": "Live Preview"
+  },
+  {
+   "fieldname": "preview_html",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Theme"
+  },
+  {
+   "fieldname": "theme_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Theme Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Light",
+   "fieldname": "theme_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Mode",
+   "options": "Light\nDark",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_meta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_standard",
+   "fieldtype": "Check",
+   "label": "Standard Theme",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Active",
+   "read_only": 1
+  },
+  {
+   "fieldname": "colors_section",
+   "fieldtype": "Section Break",
+   "label": "Colors"
+  },
+  {
+   "default": "#0F766E",
+   "fieldname": "primary_color",
+   "fieldtype": "Color",
+   "label": "Primary"
+  },
+  {
+   "default": "#334155",
+   "fieldname": "secondary_color",
+   "fieldtype": "Color",
+   "label": "Secondary"
+  },
+  {
+   "default": "#D97706",
+   "fieldname": "accent_color",
+   "fieldtype": "Color",
+   "label": "Accent"
+  },
+  {
+   "fieldname": "column_break_colors",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "#059669",
+   "fieldname": "success_color",
+   "fieldtype": "Color",
+   "label": "Success"
+  },
+  {
+   "default": "#D97706",
+   "fieldname": "warning_color",
+   "fieldtype": "Color",
+   "label": "Warning"
+  },
+  {
+   "default": "#DC2626",
+   "fieldname": "danger_color",
+   "fieldtype": "Color",
+   "label": "Danger"
+  },
+  {
+   "default": "#0284C7",
+   "fieldname": "info_color",
+   "fieldtype": "Color",
+   "label": "Info"
+  },
+  {
+   "fieldname": "surfaces_section",
+   "fieldtype": "Section Break",
+   "label": "Surfaces"
+  },
+  {
+   "default": "#F8FAFC",
+   "fieldname": "background_color",
+   "fieldtype": "Color",
+   "label": "Background"
+  },
+  {
+   "default": "#FFFFFF",
+   "fieldname": "surface_color",
+   "fieldtype": "Color",
+   "label": "Surface / Card"
+  },
+  {
+   "default": "#0F172A",
+   "fieldname": "text_color",
+   "fieldtype": "Color",
+   "label": "Text"
+  },
+  {
+   "default": "#64748B",
+   "fieldname": "muted_text_color",
+   "fieldtype": "Color",
+   "label": "Muted Text"
+  },
+  {
+   "fieldname": "column_break_surfaces",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "#E2E8F0",
+   "fieldname": "border_color",
+   "fieldtype": "Color",
+   "label": "Border"
+  },
+  {
+   "default": "#FFFFFF",
+   "fieldname": "navbar_color",
+   "fieldtype": "Color",
+   "label": "Navbar"
+  },
+  {
+   "default": "#0F172A",
+   "fieldname": "sidebar_color",
+   "fieldtype": "Color",
+   "label": "Sidebar"
+  },
+  {
+   "default": "#E2E8F0",
+   "fieldname": "sidebar_text_color",
+   "fieldtype": "Color",
+   "label": "Sidebar Text"
+  },
+  {
+   "fieldname": "typography_section",
+   "fieldtype": "Section Break",
+   "label": "Typography"
+  },
+  {
+   "default": "Plus Jakarta Sans",
+   "fieldname": "font_family",
+   "fieldtype": "Select",
+   "label": "Body Font",
+   "options": "Plus Jakarta Sans\nIBM Plex Sans\nSource Sans 3\nNunito\nOutfit\nManrope\nDM Sans\nInter\nRoboto\nLato\nOpen Sans\nPoppins\nSystem UI"
+  },
+  {
+   "default": "Plus Jakarta Sans",
+   "fieldname": "heading_font",
+   "fieldtype": "Select",
+   "label": "Heading Font",
+   "options": "Plus Jakarta Sans\nIBM Plex Sans\nSource Sans 3\nNunito\nOutfit\nManrope\nDM Sans\nInter\nRoboto\nLato\nOpen Sans\nPoppins\nSystem UI"
+  },
+  {
+   "fieldname": "column_break_type",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "14px",
+   "fieldname": "base_font_size",
+   "fieldtype": "Select",
+   "label": "Base Font Size",
+   "options": "13px\n14px\n15px\n16px"
+  },
+  {
+   "default": "600",
+   "fieldname": "heading_weight",
+   "fieldtype": "Select",
+   "label": "Heading Weight",
+   "options": "500\n600\n700"
+  },
+  {
+   "default": "400",
+   "fieldname": "body_weight",
+   "fieldtype": "Select",
+   "label": "Body Weight",
+   "options": "400\n500"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-17 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Appearance",
+ "name": "Appearance Theme",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "theme_name",
+ "track_changes": 1
+}

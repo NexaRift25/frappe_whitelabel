@@ -1,0 +1,73 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"appearance-header\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Appearance</b></span>\",\"col\":12}},{\"id\":\"appearance-intro\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"shortcut-settings\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appearance Settings\",\"col\":4}},{\"id\":\"shortcut-themes\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appearance Themes\",\"col\":4}}]",
+ "creation": "2026-08-17 12:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "image-view",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Appearance",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appearance",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appearance Settings",
+   "link_count": 0,
+   "link_to": "Appearance Settings",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appearance Theme",
+   "link_count": 0,
+   "link_to": "Appearance Theme",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-08-17 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Appearance",
+ "name": "Appearance",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "",
+   "label": "Appearance Settings",
+   "link_to": "Appearance Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "",
+   "label": "Appearance Themes",
+   "link_to": "Appearance Theme",
+   "type": "DocType"
+  }
+ ],
+ "title": "Appearance"
+}

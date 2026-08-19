@@ -1,0 +1,66 @@
+/* theme.css — Layout variant styles driven by data attributes set from JS */
+
+/* Button shapes */
+html[data-appearance-buttons="pill"] .btn {
+	border-radius: 999px;
+}
+
+html[data-appearance-buttons="square"] .btn {
+	border-radius: 4px;
+}
+
+/* Card styles */
+html[data-appearance-cards="elevated"] .frappe-card,
+html[data-appearance-cards="elevated"] .widget {
+	box-shadow: var(--shadow-sm);
+}
+
+html[data-appearance-cards="outlined"] .frappe-card,
+html[data-appearance-cards="outlined"] .widget {
+	box-shadow: none;
+	border: 1px solid var(--border-color);
+}
+
+html[data-appearance-cards="flat"] .frappe-card,
+html[data-appearance-cards="flat"] .widget {
+	box-shadow: none;
+	border: none;
+}
+
+/* Table density */
+html[data-appearance-tables="compact"] .list-row,
+html[data-appearance-tables="compact"] .grid-row .data-row {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+/* Form spacing */
+html[data-appearance-forms="spacious"] .form-layout .form-group {
+	margin-bottom: 1.25rem;
+}
+
+html[data-appearance-forms="compact"] .form-layout .form-group {
+	margin-bottom: 0.5rem;
+}
+
+/* Navbar style */
+html[data-appearance-navbar="minimal"] .navbar {
+	box-shadow: none;
+}
+
+/* Sidebar behavior */
+html[data-appearance-sidebar-behavior="collapsed"] .layout-side-section:has(.desk-sidebar) {
+	display: none;
+}
+
+/* Logo placement */
+html[data-logo-placement="center"] .navbar .navbar-brand {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Hide help dropdown */
+html[data-hide-help="1"] .dropdown-help {
+	display: none !important;
+}

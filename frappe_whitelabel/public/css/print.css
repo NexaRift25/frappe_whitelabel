@@ -1,0 +1,5 @@
+.print-format h1,
+.print-format h2,
+.print-format h3 {
+	color: var(--appearance-primary, #0f766e);
+}
