@@ -52,6 +52,7 @@ def _create_standard_theme_if_missing(tokens: dict) -> None:
 		doc.set(field, tokens.get(field))
 	doc.is_standard = 1
 	doc.is_active = 0
+	doc.flags.ignore_permissions = True
 	doc.insert(ignore_permissions=True)
 
 
@@ -145,7 +146,8 @@ def duplicate_theme(theme_name: str, new_name: str | None = None) -> str:
 
 def validate_theme(doc) -> None:
 	if doc.is_new():
-		if doc.theme_name in STANDARD_THEME_NAMES:
+		# Factory Daylight/Midnight inserts are allowed; custom themes cannot reuse those names.
+		if doc.theme_name in STANDARD_THEME_NAMES and not cint(doc.is_standard):
 			frappe.throw(_("System theme names are reserved. Choose a different name."))
 		if frappe.db.exists("Appearance Theme", doc.theme_name):
 			frappe.throw(_("Theme {0} already exists.").format(doc.theme_name))
